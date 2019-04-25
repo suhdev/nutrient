@@ -1,0 +1,16 @@
+package: github.com/suhdev/nutrient
+import:
+- package: github.com/golang/protobuf
+  version: ^1.3.1
+  subpackages:
+  - proto
+  - ptypes/empty
+- package: google.golang.org/grpc
+  version: ^1.20.1
+  subpackages:
+  - codes
+  - status
+- package: github.com/micro/go-micro
+  version: ^1.1.0
+- package: github.com/micro/protoc-gen-micro
+  version: ^0.7.2
