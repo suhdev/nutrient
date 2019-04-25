@@ -34,10 +34,10 @@ message Recipe {
   string uri = 1;
   string url = 2;
   string label = 3;
-  float yield = 4;
+  double yield = 4;
   string calories = 5;
-  float total_time = 6;
-  float total_weight = 7;
+  double total_time = 6;
+  double total_weight = 7;
 }
 
 message Result {
