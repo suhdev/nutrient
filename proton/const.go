@@ -9,8 +9,8 @@ const (
 	EnvMySQLUser = "MYSQL_USER"
 	// EnvMySQLPassword environment variable to use for SQL password
 	EnvMySQLPassword = "MYSQL_PWD"
-	// EnvThirdPartyAPIKey environment variable to use for API key
-	EnvThirdPartyAPIKey = "THIRD_PARTY_API_KEY"
-	// EnvThirdPartyAPISecret environment variable to use for API secret
-	EnvThirdPartyAPISecret = "THIRD_PARTY_API_SECRET"
+	// EnvThirdPartyAppID environment variable to use for App ID
+	EnvThirdPartyAppID = "THIRD_PARTY_APP_ID"
+	// EnvThirdPartyAppKey environment variable to use for App Key
+	EnvThirdPartyAppKey = "THIRD_PARTY_APP_KEY"
 )
