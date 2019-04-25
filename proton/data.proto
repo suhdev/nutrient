@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+package proton;
+
+import "google/protobuf/empty.proto";
+
+enum DietType {
+  BALANCED = 0;
+  HIGH_PROTEIN = 1;
+  HIGH_FIBER = 2;
+  LOW_FAT = 3;
+  LOW_CARB = 4;
+  LOW_SODIUM = 5;
+}
+
+enum HealthType {
+  PEANUT_FREE = 0;
+  TREE_NUT_FREE = 1;
+  SOY_FREE = 2;
+  FISH_FREE = 3;
+  SHELLFISH_FREE = 4;
+}
+
+message QueryRequest {
+  string q = 1;
+  string r = 2;
+  int32 from = 3;
+  int32 to = 4;
+  DietType Diet = 5;
+  HealthType Health = 6;
+}
+
+message Recipe {
+  string uri = 1;
+  string url = 2;
+  string label = 3;
+  float yield = 4;
+  string calories = 5;
+  float total_time = 6;
+  float total_weight = 7;
+}
+
+message Result {
+  repeated Recipe entries = 1;
+  string error = 2;
+}
+
+service Business { rpc search(QueryRequest) returns (Result); }
+
+service DataStore {
+  rpc search(QueryRequest) returns (Result);
+  rpc add(Result) returns (google.protobuf.Empty);
+}
