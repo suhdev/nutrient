@@ -14,3 +14,7 @@ The repo contains common `protobuf` definitions that are shared across micro-ser
 2. Do `go get -u github.com/golang/protobuf/protoc-gen-go` to install go's protobuf plugin. 
 3. Do `go get -u github.com/micro/protoc-gen-micro` to install `go-micro`'s protobuf plugin.
 4. Do `make build` to build the `.proto` file. 
+
+## TODO
+
+* Add `make` tasks to build all services and docker images at once
