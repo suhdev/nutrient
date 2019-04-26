@@ -1,0 +1,153 @@
+hash: e049527f4da5f12360f2949aca83c152fb7f973bd97481f672489342d9f1d55e
+updated: 2019-04-26T01:39:18.230464757+01:00
+imports:
+- name: github.com/armon/go-metrics
+  version: 2801d9688273d5b516966851b9a0863b9e6b0652
+- name: github.com/go-log/log
+  version: a514cf01a3eb56ec6aff9ae5663453d990e68ed3
+  subpackages:
+  - log
+- name: github.com/golang/protobuf
+  version: b5d812f8a3706043e23a9cd5babf2e5423744d30
+  subpackages:
+  - proto
+  - ptypes/empty
+- name: github.com/google/btree
+  version: 20236160a414454a9c64b6c8829381c6f4bddcaa
+- name: github.com/google/uuid
+  version: c2e93f3ae59f2904160ceaab466009f965df46d6
+- name: github.com/hashicorp/consul
+  version: cf8b76b2e5e4649084dfa3e35e4fce99ad74f296
+  subpackages:
+  - api
+  - watch
+- name: github.com/hashicorp/errwrap
+  version: 8a6fb523712970c966eefc6b39ed2c5e74880354
+- name: github.com/hashicorp/go-cleanhttp
+  version: d3fcbee8e1810ecee4bdbf415f42f84cfd0e3361
+- name: github.com/hashicorp/go-immutable-radix
+  version: 27df80928bb34bb1b0d6d0e01b9e679902e7a6b5
+- name: github.com/hashicorp/go-msgpack
+  version: c4a1f61d43c2788b8b6fd55304f01a96863eec94
+  subpackages:
+  - codec
+- name: github.com/hashicorp/go-multierror
+  version: 886a7fbe3eb1c874d46f623bfa70af45f425b3d1
+- name: github.com/hashicorp/go-rootcerts
+  version: 63503fb4e1eca22f9ae0f90b49c5d5538a0e87eb
+- name: github.com/hashicorp/go-sockaddr
+  version: c7188e74f6acae5a989bdc959aa779f8b9f42faf
+- name: github.com/hashicorp/golang-lru
+  version: 7087cb70de9f7a8bc0a10c375cb0d2280a8edf9c
+  subpackages:
+  - simplelru
+- name: github.com/hashicorp/memberlist
+  version: a8f83c6403e0c718e9336784a270c09dc4613d3e
+- name: github.com/hashicorp/serf
+  version: 15cfd05de3dffb3664aa37b06e91f970b825e380
+  subpackages:
+  - coordinate
+- name: github.com/jinzhu/gorm
+  version: e3987fd4b803c16497aa4dfd2e75db7a6a061a4e
+- name: github.com/micro/cli
+  version: edf20bfe720f1ace8affc278814dfc372d02d6b7
+- name: github.com/micro/go-grpc
+  version: e2219092cc358a66d8157ba977b64dae7de20b29
+- name: github.com/micro/go-log
+  version: 5cb7bb4413f4ae8de0d7e826aa2854861d3a6c31
+- name: github.com/micro/go-micro
+  version: 722a3682c854ba3fbd8b932228734f9dfe7bf887
+  subpackages:
+  - broker
+  - broker/http
+  - broker/memory
+  - client
+  - cmd
+  - codec
+  - codec/bytes
+  - codec/grpc
+  - codec/json
+  - codec/jsonrpc
+  - codec/proto
+  - codec/protorpc
+  - errors
+  - metadata
+  - registry
+  - registry/consul
+  - registry/gossip
+  - registry/gossip/proto
+  - registry/mdns
+  - registry/memory
+  - selector
+  - selector/dns
+  - selector/static
+  - server
+  - server/debug
+  - server/debug/proto
+  - transport
+  - transport/http
+  - transport/memory
+- name: github.com/micro/go-rcache
+  version: 2c4d7ce6742999be1708c70a3638f2c0ce28f2cd
+- name: github.com/micro/kubernetes
+  version: 1cfb606443dbbf04305583bf198d7096f64667ea
+  subpackages:
+  - go/micro
+- name: github.com/micro/mdns
+  version: 3a29b6675e7404722eed4d4dde532c2e103007a7
+- name: github.com/micro/protoc-gen-micro
+  version: 87d2229ff80ceabaa8ff56aa136c47c270fd18be
+- name: github.com/micro/util
+  version: b9d497e656ef2a7ae781bd909cfc938144a653ff
+  subpackages:
+  - go/lib/addr
+  - go/lib/net
+  - go/lib/tls
+- name: github.com/miekg/dns
+  version: cfee849963ab7a27e9597c40aee1e903f8e55ce2
+- name: github.com/mitchellh/go-homedir
+  version: af06845cf3004701891bf4fdb884bfe4920b3727
+- name: github.com/mitchellh/hashstructure
+  version: a38c50148365edc8df43c1580c48fb2b3a1e9cd7
+- name: github.com/mitchellh/mapstructure
+  version: 3536a929edddb9a5b34bd6861dc4a9647cb459fe
+- name: github.com/nats-io/go-nats
+  version: 70fe06cee50d4b6f98248d9675fb55f2a3aa7228
+- name: github.com/nats-io/nkeys
+  version: 1546a3320a8f195a5b5c84aef8309377c2e411d5
+- name: github.com/pkg/errors
+  version: ba968bfe8b2f7e042a574c888954fccecfa385b4
+- name: github.com/sean-/seed
+  version: e2103e2c35297fb7e17febb81e49b312087a2372
+- name: github.com/suhdev/nutrient
+  version: 0a11d50404e174420dbc032189625716c376f703
+  subpackages:
+  - proton
+- name: golang.org/x/crypto
+  version: c05e17bb3b2dca130fc919668a96b4bec9eb9442
+  subpackages:
+  - ed25519
+  - ed25519/internal/edwards25519
+- name: golang.org/x/net
+  version: 4829fb13d2c62012c17688fa7f629f371014946d
+  subpackages:
+  - bpf
+  - http/httpguts
+  - http2
+  - http2/h2c
+  - http2/hpack
+  - idna
+  - internal/iana
+  - internal/socket
+  - ipv4
+  - ipv6
+- name: golang.org/x/text
+  version: 342b2e1fbaa52c93f31447ad2c6abc048c63e475
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+- name: google.golang.org/grpc
+  version: 25c4f928eaa6d96443009bd842389fb4fa48664e
+testImports: []
