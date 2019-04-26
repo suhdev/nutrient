@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  # Unique key of the Deployment instance
+  name: nutrient-nats-deployment
+spec:
+  selector:
+    matchLabels:
+      app: nutrient-nats
+  # 3 Pods should exist at all times.
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        # Apply this label to pods and default
+        # the Deployment label selector to this value
+        app: nutrient-nats
+    spec:
+      containers:
+      - name: nutrient-nats
+        image: nats:1.4.1
+        ports:
+        - containerPort: 4222
+        - containerPort: 6222
+        - containerPort: 8222
+---
+kind: Service
+apiVersion: v1
+metadata:
+  # Unique key of the Service instance
+  name: nats-service
+spec:
+  ports:
+    # Accept traffic sent to port 80
+    - name: clients
+      port: 4222
+      targetPort: 4222
+    - name: client1
+      port: 6222
+      targetPort: 6222
+    - name: client2
+      port: 8222
+      targetPort: 8222
+  selector:
+    # Loadbalance traffic across Pods matching
+    # this label selector
+    app: nutrient-nats
+  # Create an HA proxy in the cloud provider
+  # with an External IP address - *Only supported
+  # by some cloud providers*
+  type: ClusterIP
