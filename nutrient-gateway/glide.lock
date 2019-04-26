@@ -1,0 +1,30 @@
+hash: ad566da4a40b2bfc7b8afacdf1a95424d6014043396cc60f5c96ad0fe1a7f440
+updated: 2019-04-25T00:25:44.317310823+01:00
+imports:
+- name: github.com/golang/protobuf
+  version: b5d812f8a3706043e23a9cd5babf2e5423744d30
+  subpackages:
+  - proto
+- name: github.com/jinzhu/gorm
+  version: e3987fd4b803c16497aa4dfd2e75db7a6a061a4e
+- name: github.com/micro/go-micro
+  version: 722a3682c854ba3fbd8b932228734f9dfe7bf887
+- name: github.com/micro/protoc-gen-micro
+  version: 87d2229ff80ceabaa8ff56aa136c47c270fd18be
+- name: github.com/nats-io/go-nats
+  version: 70fe06cee50d4b6f98248d9675fb55f2a3aa7228
+  subpackages:
+  - encoders/builtin
+  - util
+- name: github.com/nats-io/nkeys
+  version: 1546a3320a8f195a5b5c84aef8309377c2e411d5
+- name: github.com/nats-io/nuid
+  version: 4b96681fa6d28dd0ab5fe79bac63b3a493d9ee94
+- name: golang.org/x/crypto
+  version: c05e17bb3b2dca130fc919668a96b4bec9eb9442
+  subpackages:
+  - ed25519
+  - ed25519/internal/edwards25519
+- name: google.golang.org/grpc
+  version: 25c4f928eaa6d96443009bd842389fb4fa48664e
+testImports: []

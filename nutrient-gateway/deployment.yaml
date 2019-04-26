@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  # Unique key of the Deployment instance
+  name: gateway-deployment
+spec:
+  selector:
+    matchLabels:
+      app: gateway
+  # 3 Pods should exist at all times.
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        # Apply this label to pods and default
+        # the Deployment label selector to this value
+        app: gateway
+    spec:
+      containers:
+      - name: nutrient-gateway
+        image: suhdev/nutrient-gateway:1.0.1
