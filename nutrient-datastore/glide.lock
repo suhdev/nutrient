@@ -1,0 +1,158 @@
+hash: 2e76fe27b69f092155cfa08c6dc172a0685c3f462877077623b1d9bddab11096
+updated: 2019-04-26T01:35:21.267407178+01:00
+imports:
+- name: github.com/armon/go-metrics
+  version: 2801d9688273d5b516966851b9a0863b9e6b0652
+- name: github.com/go-log/log
+  version: a514cf01a3eb56ec6aff9ae5663453d990e68ed3
+  subpackages:
+  - log
+- name: github.com/go-sql-driver/mysql
+  version: 72cd26f257d44c1114970e19afddcd812016007e
+- name: github.com/gocraft/dbr
+  version: 042fe86dc2daa9684f746ab337971e84147e8856
+  subpackages:
+  - dialect
+- name: github.com/golang/protobuf
+  version: b5d812f8a3706043e23a9cd5babf2e5423744d30
+  subpackages:
+  - proto
+  - ptypes/empty
+- name: github.com/google/btree
+  version: 20236160a414454a9c64b6c8829381c6f4bddcaa
+- name: github.com/google/uuid
+  version: c2e93f3ae59f2904160ceaab466009f965df46d6
+- name: github.com/hashicorp/consul
+  version: cf8b76b2e5e4649084dfa3e35e4fce99ad74f296
+  subpackages:
+  - api
+  - watch
+- name: github.com/hashicorp/errwrap
+  version: 8a6fb523712970c966eefc6b39ed2c5e74880354
+- name: github.com/hashicorp/go-cleanhttp
+  version: d3fcbee8e1810ecee4bdbf415f42f84cfd0e3361
+- name: github.com/hashicorp/go-immutable-radix
+  version: 27df80928bb34bb1b0d6d0e01b9e679902e7a6b5
+- name: github.com/hashicorp/go-msgpack
+  version: c4a1f61d43c2788b8b6fd55304f01a96863eec94
+  subpackages:
+  - codec
+- name: github.com/hashicorp/go-multierror
+  version: 886a7fbe3eb1c874d46f623bfa70af45f425b3d1
+- name: github.com/hashicorp/go-rootcerts
+  version: 63503fb4e1eca22f9ae0f90b49c5d5538a0e87eb
+- name: github.com/hashicorp/go-sockaddr
+  version: c7188e74f6acae5a989bdc959aa779f8b9f42faf
+- name: github.com/hashicorp/golang-lru
+  version: 7087cb70de9f7a8bc0a10c375cb0d2280a8edf9c
+  subpackages:
+  - simplelru
+- name: github.com/hashicorp/memberlist
+  version: a8f83c6403e0c718e9336784a270c09dc4613d3e
+- name: github.com/hashicorp/serf
+  version: 15cfd05de3dffb3664aa37b06e91f970b825e380
+  subpackages:
+  - coordinate
+- name: github.com/micro/cli
+  version: edf20bfe720f1ace8affc278814dfc372d02d6b7
+- name: github.com/micro/go-log
+  version: 5cb7bb4413f4ae8de0d7e826aa2854861d3a6c31
+- name: github.com/micro/go-micro
+  version: 722a3682c854ba3fbd8b932228734f9dfe7bf887
+  subpackages:
+  - broker
+  - broker/http
+  - broker/memory
+  - client
+  - cmd
+  - codec
+  - codec/bytes
+  - codec/grpc
+  - codec/json
+  - codec/jsonrpc
+  - codec/proto
+  - codec/protorpc
+  - errors
+  - metadata
+  - registry
+  - registry/consul
+  - registry/gossip
+  - registry/gossip/proto
+  - registry/mdns
+  - registry/memory
+  - selector
+  - selector/dns
+  - selector/static
+  - server
+  - server/debug
+  - server/debug/proto
+  - transport
+  - transport/http
+  - transport/memory
+- name: github.com/micro/go-rcache
+  version: 2c4d7ce6742999be1708c70a3638f2c0ce28f2cd
+- name: github.com/micro/mdns
+  version: 3a29b6675e7404722eed4d4dde532c2e103007a7
+- name: github.com/micro/util
+  version: b9d497e656ef2a7ae781bd909cfc938144a653ff
+  subpackages:
+  - go/lib/addr
+  - go/lib/net
+  - go/lib/tls
+- name: github.com/miekg/dns
+  version: cfee849963ab7a27e9597c40aee1e903f8e55ce2
+- name: github.com/mitchellh/go-homedir
+  version: af06845cf3004701891bf4fdb884bfe4920b3727
+- name: github.com/mitchellh/hashstructure
+  version: a38c50148365edc8df43c1580c48fb2b3a1e9cd7
+- name: github.com/mitchellh/mapstructure
+  version: 3536a929edddb9a5b34bd6861dc4a9647cb459fe
+- name: github.com/nats-io/nats
+  version: 70fe06cee50d4b6f98248d9675fb55f2a3aa7228
+- name: github.com/nats-io/nuid
+  version: 4b96681fa6d28dd0ab5fe79bac63b3a493d9ee94
+- name: github.com/pkg/errors
+  version: ba968bfe8b2f7e042a574c888954fccecfa385b4
+- name: github.com/rubenv/sql-migrate
+  version: 54bad0a9b051368ffec9cd2b869789c2b8eaea35
+  subpackages:
+  - '...'
+  - sqlparse
+- name: github.com/sean-/seed
+  version: e2103e2c35297fb7e17febb81e49b312087a2372
+- name: github.com/suhdev/nutrient
+  version: 46fe156d3ca6e36bdda42070a2a67ff4fff17d05
+  subpackages:
+  - proton
+- name: golang.org/x/crypto
+  version: c05e17bb3b2dca130fc919668a96b4bec9eb9442
+  subpackages:
+  - ed25519
+  - ed25519/internal/edwards25519
+- name: golang.org/x/net
+  version: 4829fb13d2c62012c17688fa7f629f371014946d
+  subpackages:
+  - bpf
+  - http/httpguts
+  - http2
+  - http2/h2c
+  - http2/hpack
+  - idna
+  - internal/iana
+  - internal/socket
+  - ipv4
+  - ipv6
+- name: golang.org/x/text
+  version: b1379a7b4714109485d36884eea575780d466cbd
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+- name: google.golang.org/appengine
+  version: 54a98f90d1c46b7731eb8fb305d2a321c30ef610
+  subpackages:
+  - cloudsql
+- name: gopkg.in/gorp.v1
+  version: 6a667da9c028871f98598d85413e3fc4c6daa52e
+testImports: []

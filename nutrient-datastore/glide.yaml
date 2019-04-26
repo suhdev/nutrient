@@ -1,0 +1,16 @@
+package: github.com/suhdev/nutrient-datastore
+import:
+- package: github.com/gocraft/dbr
+  version: ^2.4.0
+- package: github.com/nats-io/nats
+  version: ^1.7.2
+- package: github.com/nats-io/nuid
+  version: ^1.0.1
+- package: github.com/rubenv/sql-migrate
+  subpackages:
+  - '...'
+- package: github.com/pkg/errors
+  version: ^0.8.1
+- package: github.com/go-sql-driver/mysql
+  version: ^1.4.1
+- package: github.com/suhdev/nutrient
