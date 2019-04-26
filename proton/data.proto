@@ -45,9 +45,9 @@ message Result {
   string error = 2;
 }
 
-service Business { rpc search(QueryRequest) returns (Result); }
+service Business { rpc Search(QueryRequest) returns (Result); }
 
 service DataStore {
-  rpc search(QueryRequest) returns (Result);
-  rpc add(Result) returns (google.protobuf.Empty);
+  rpc Search(QueryRequest) returns (Result);
+  rpc Add(Result) returns (google.protobuf.Empty);
 }

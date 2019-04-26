@@ -57,7 +57,7 @@ func NewBusinessService(name string, c client.Client) BusinessService {
 }
 
 func (c *businessService) Search(ctx context.Context, in *QueryRequest, opts ...client.CallOption) (*Result, error) {
-	req := c.c.NewRequest(c.name, "Business.search", in)
+	req := c.c.NewRequest(c.name, "Business.Search", in)
 	out := new(Result)
 	err := c.c.Call(ctx, req, out, opts...)
 	if err != nil {
@@ -117,7 +117,7 @@ func NewDataStoreService(name string, c client.Client) DataStoreService {
 }
 
 func (c *dataStoreService) Search(ctx context.Context, in *QueryRequest, opts ...client.CallOption) (*Result, error) {
-	req := c.c.NewRequest(c.name, "DataStore.search", in)
+	req := c.c.NewRequest(c.name, "DataStore.Search", in)
 	out := new(Result)
 	err := c.c.Call(ctx, req, out, opts...)
 	if err != nil {
@@ -127,7 +127,7 @@ func (c *dataStoreService) Search(ctx context.Context, in *QueryRequest, opts ..
 }
 
 func (c *dataStoreService) Add(ctx context.Context, in *Result, opts ...client.CallOption) (*empty.Empty, error) {
-	req := c.c.NewRequest(c.name, "DataStore.add", in)
+	req := c.c.NewRequest(c.name, "DataStore.Add", in)
 	out := new(empty.Empty)
 	err := c.c.Call(ctx, req, out, opts...)
 	if err != nil {
